@@ -8,6 +8,7 @@ export default defineConfig({
   server: {
     host: true,      // exposes to 0.0.0.0
     port: 5173,      // match docker EXPOSE and -p
-    strictPort: true // avoid random port assignment
+    strictPort: true, // avoid random port assignment
+    allowedHosts: true
   }
 })
